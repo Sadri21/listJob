@@ -40,6 +40,7 @@ public class LoginActivity extends AppCompatActivity {
       AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
       binding = ActivityLoginBinding.inflate(getLayoutInflater());
       setContentView(binding.getRoot());
+      getSupportActionBar().hide();
       registerLaunch();
 
       String type = "";
