@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">JobList</string>
+    <string name="sign_in_with_google">Continue with Google</string>
+    <string name="job_list_app">Job List App</string>
+    <string name="login">Login</string>
+    <string name="sign_in_facebook">Continue with facebook</string>
+    <string name="login_method">Choose login method</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_account">Account</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="fulltime">Fulltime : </string>
+    <string name="location">Location :</string>
+
+    <string name="facebook_app_id">546855830938274</string>
+    <string name="fb_login_protocol_scheme">fb546855830938274</string>
+    <string name="facebook_client_token">d7f369d56858e479471ce0dcaf7617b2</string>
+
+
+</resources>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.OfficeDetail">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_height="40dp">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/round_arrow_back_ios_black_36"
+            android:background="@android:color/transparent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Job Detail"/>
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/lbl_company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Company"
+                android:textColor="@color/black"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_info_company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_item"
+                android:layout_below="@id/lbl_company"
+                android:layout_marginTop="16dp"
+                android:layout_marginHorizontal="16dp"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/img_office"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/office_holder"
+                    android:adjustViewBounds="true"/>
+
+                <TextView
+                    android:id="@+id/job_company"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/img_office"
+                    android:text="-"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginStart="16dp"/>
+
+                <TextView
+                    android:id="@+id/job_location"
+                    android:layout_below="@+id/job_company"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/img_office"
+                    android:layout_marginTop="8dp"
+                    android:text="-"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_marginStart="16dp"/>
+
+                <TextView
+                    android:id="@+id/job_company_link"
+                    android:layout_below="@+id/job_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/img_office"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:autoLink="web|all"
+                    android:textSize="14sp"
+                    android:layout_marginStart="16dp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/lbl_job_specification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Job Spesification"
+                android:layout_below="@id/rl_info_company"
+                android:textColor="@color/black"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lbl_job_specification"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_marginHorizontal="16dp"
+                android:background="@drawable/background_item"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Title"
+                    android:alpha="0.6"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/job_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:alpha="1"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fulltime"
+                    android:alpha="0.6"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/job_fulltime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:alpha="1"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:alpha="0.6"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/job_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:alpha="1"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</RelativeLayout>
